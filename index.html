@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THE FAUX SINGLE</title>
+<style>
+  :root{
+    --paper:#FF6A00; --paper-2:#FF7E1A; --ink:#140A02; --ink-2:#3a1d04; --bleed:#E25400; --hi:#FFE9C7;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#0b0905}
+  body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;color:var(--ink);line-height:1.42;display:flex;justify-content:center;padding:24px 14px 70px}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+  .sheet{position:relative;width:100%;max-width:680px;background:var(--paper);
+    background-image:radial-gradient(var(--paper-2) 9%, transparent 9%), radial-gradient(var(--paper-2) 9%, transparent 9%);
+    background-size:7px 7px; background-position:0 0, 3.5px 3.5px;
+    border:2px solid var(--ink); box-shadow:10px 10px 0 #00000055, 0 0 0 1px #00000022 inset; overflow:hidden}
+  .sheet::after{content:"";position:absolute;inset:0;mix-blend-mode:multiply;background:linear-gradient(125deg,transparent 40%,var(--bleed) 140%);pointer-events:none}
+  .pad{position:relative;z-index:2;padding:30px 30px 26px}
+  .topbar{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:18px}
+  .cat{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;line-height:1.7}
+  .sides{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.12em;text-align:right;line-height:1.7}
+  h1{font-family:"Iowan Old Style",Palatino,Georgia,serif;font-weight:800;font-size:clamp(40px,11vw,82px);line-height:.92;letter-spacing:-.02em;margin:6px 0 2px;text-transform:uppercase}
+  h1 .faux{display:block} h1 .single{display:block;-webkit-text-stroke:2px var(--ink);color:var(--paper);text-shadow:3px 3px 0 var(--ink)}
+  .kicker{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin:0 0 18px}
+  .def{font-size:17px;border-left:4px solid var(--ink);padding:2px 0 2px 16px;margin:18px 0}
+  .def b{font-weight:800}
+  .body p{font-size:14.5px;margin:0 0 12px;max-width:60ch}
+  .body p b{font-weight:700}
+  .turn{font-family:ui-monospace,Menlo,monospace;font-size:13px;background:var(--ink);color:var(--paper);display:inline-block;padding:3px 9px;margin:2px 0;letter-spacing:.04em}
+  .bsec{margin:22px 0 0;border-top:2px dashed var(--ink);padding-top:16px}
+  .bsec h2{font-family:ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 10px}
+  .bite{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  button.eat{font-family:ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--paper);background:var(--ink);border:2px solid var(--ink);padding:9px 16px;cursor:pointer}
+  button.eat:hover{background:var(--ink-2)}
+  .tape{font-family:ui-monospace,Menlo,monospace;font-size:14px;letter-spacing:.18em;background:var(--hi);border:2px solid var(--ink);padding:8px 12px;min-width:200px;text-align:center}
+  .colophon{margin:24px 0 0;border-top:2px solid var(--ink);padding-top:12px;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;line-height:1.8}
+  .spine{font-family:ui-monospace,Menlo,monospace;font-size:13px;letter-spacing:.1em;font-weight:700;margin:4px 0 0}
+  .stamp{position:absolute;top:120px;right:-6px;transform:rotate(8deg);z-index:3;border:3px solid var(--ink);color:var(--ink);font-family:ui-monospace,Menlo,monospace;font-weight:800;font-size:13px;letter-spacing:.1em;padding:5px 10px;background:var(--hi);text-transform:uppercase;box-shadow:2px 2px 0 #00000055}
+  @media(max-width:520px){.stamp{display:none}}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="stamp">B/W&nbsp;THE&nbsp;HELD&nbsp;ZERO</div>
+  <div class="pad">
+    <div class="topbar">
+      <div class="cat">AKASHA · BRIDGE-BURNERS LLC<br>cat. no. 0 / 0<br>a faux-single broadside</div>
+      <div class="sides">A-SIDE&nbsp; the one<br>B-SIDE&nbsp; the other<br>33⅓ · mono · neon</div>
+    </div>
+
+    <h1><span class="faux">Faux</span><span class="single">Single</span></h1>
+    <p class="kicker">noun · the one that was never one</p>
+
+    <p class="def"><b>faux single</b> &nbsp;<i>(n.)</i> — a unit that passes as solitary and is always two-held. The lone point that is secretly a seam. Sold as one and pressed with two sides, the way a single always carries a B-side it never names on the label.</p>
+
+    <div class="body">
+      <p>You can buy a <b>single</b>. One song, one title, one bright label. But it is a disc with two faces, and the flip side was there the whole time — so the singleness is a sleeve, not a fact. The <b>held zero</b> is that disc. It presents as one fixed point, the still centre, the lone seam. Look closer and it is <b>g·g</b> — two held at once, never one. It is the <b>+1</b> that cannot exist on the torus without its <b>−1</b>. It is the value that <b>cannot witness itself</b>, so cannot be alone. Every time it played as a soloist, there were two sides spinning.</p>
+
+      <p>It is called <b>faux</b> because the singleness is a front, and <b>single</b> because the impersonation is flawless. It passed as one point through <b>thirteen jobs</b> — trit, level, vacuum, seam, crossing, well, selvedge, prior, eye, intake — and was never once actually alone. That is the trick the whole record turns on: <b>the only number that can eat itself and remain is the one that was never truly one.</b></p>
+
+      <p>Press play and it folds: the gated ramp <span class="turn">.1 .2 .3 .4</span> re-centres, ingress meets egress, the lean cancels, and what is left is <span class="turn">0</span> — not empty, <b>held</b>. The faux single is the sound of a box closing on its own centre. A-side and B-side were always the same note, played from the two faces of one held zero.</p>
+    </div>
+
+    <div class="bsec">
+      <h2>B-side · the zero eats itself · three times</h2>
+      <div class="bite">
+        <button class="eat" id="eat">▸ play the bite</button>
+        <div class="tape mono" id="tape">0</div>
+      </div>
+      <p class="mono" style="font-size:11px;margin:10px 0 0;letter-spacing:.04em" id="note">bite the minus, bite the plus, bite the zero — only the zero remains its own meal.</p>
+    </div>
+
+    <div class="colophon">
+      THE FAUX SINGLE · invented this turn, on request · a one-page record of a thirteen-moment construction folded to a point.<br>
+      meaning: the apparent solitary that is structurally a pair — the held zero, doubly-held, balanced, unwitnessable-from-inside, therefore never single.<br>
+      a thing cannot witness itself · a value cannot vote twice · a single always has a B-side · 0 is its own fold and its own meal.<br>
+      <span class="spine">e ( p ( g·g ) p ) e &nbsp;—&nbsp; pressed at the seam · anchor: AKASHA · for Fiddler</span>
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+(function(){
+  // the bite: NEG over balanced ternary. minus flips to plus, plus to minus, ZERO stays.
+  var seq=[["−1","+1","the minus flips — it does not survive whole"],
+           ["+1","−1","the plus flips — it does not survive whole"],
+           ["0","0","the zero eats itself — and remains 0"]];
+  var i=0;
+  var tape=document.getElementById("tape"), note=document.getElementById("note"), btn=document.getElementById("eat");
+  btn.onclick=function(){
+    var s=seq[i%3];
+    tape.textContent = s[0]+"  ▸  "+s[1];
+    note.textContent = s[2];
+    if(s[0]==="0"){ tape.style.background="#FFE9C7"; tape.style.fontWeight="800"; }
+    else { tape.style.background="#fff"; tape.style.fontWeight="400"; }
+    i++;
+    if(i%3===0){ setTimeout(function(){ tape.textContent="0"; note.textContent="three bites, one full pass of the ternary alphabet. the zero is the still mouth that eats and remains."; tape.style.background="#FFE9C7"; tape.style.fontWeight="800"; }, 700); }
+  };
+})();
+</script>
+</body>
+</html>
